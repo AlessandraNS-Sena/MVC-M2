@@ -1,0 +1,14 @@
+1. Explique com suas palavras o papel de cada camada da arquitetura MVC usada neste projeto.
+Como o Model, o Controller e a View interagem entre si?
+
+O Model é a camada que realiza as conexões entre a interface e o usuário, buscando os dados solicitados pela página; O Controller é a camada onde passam as solicitações realizadas na camada de visualização e requisita as informações constadas no Model; A camada View é responsável pelo o que será de visualização do usuário, sendo o lugar onde ocorrem as requisições de acesso do usuário (como realizar login/cadastro, seguir para outra página)
+
+2. Como ocorre o envio e o recebimento de dados no formato JSON neste projeto?
+Cite uma rota que responde em JSON e explique seu funcionamento.
+
+Um exemplo de rota é a de criar um novo usuário, onde é necessário adicionar as informações de Nome e Email nos cantos requeridos e selecionar o botão de "adicionar" no campo "Cadastrar Novo Aluno". Após a requisição, o pedido de realização será realizado ao controller que por sua vez solicitará ao model a implementação do cadastro no banco de dados. 
+
+3. Qual a importância de usar HTML básico com formulários e tabelas para organizar e manipular dados no navegador?
+Por que esse tipo de estrutura ainda é útil em projetos back-end com Node.js?
+
+A utilização do HTML básico é importante para a implementação de telas de cadastro e loging, bem como a implementação e seleção de campos de solicitação de dados, porque é uma forma de gravar dados ao banco de dados, registrando usuários e itens como senhas, dados bancários, etc.
